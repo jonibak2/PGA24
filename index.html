@@ -117,7 +117,7 @@
       justify-content: center;
     }
 
-    .nomination-card, .video-card, .medium-card, .highlight-video {
+    .nomination-card, .video-card, .medium-card, .highlight-image {
       background-color: #1c1c1c;
       border-radius: 15px;
       padding: 2rem;
@@ -211,7 +211,7 @@
       border-radius: 10px;
     }
 
-    .highlight-video {
+    .highlight-image {
       background: linear-gradient(135deg, rgba(50, 0, 0, 0.6), rgba(20, 0, 10, 0.9));
       border-radius: 20px;
       padding: 3rem;
@@ -220,14 +220,15 @@
       margin-top: 4rem;
     }
 
-    .highlight-video video {
-      width: 100%;
+    .highlight-image img {
+      width: 1280px;
       height: 720px;
+      max-width: 100%;
       border-radius: 15px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     }
 
-    .highlight-video a {
+    .highlight-image a {
       color: #b30000;
       text-decoration: none;
       font-size: 1.5rem;
@@ -235,7 +236,7 @@
       margin-top: 1rem;
     }
 
-    .highlight-video a:hover {
+    .highlight-image a:hover {
       text-shadow: 0 0 10px #e0e0e0;
     }
 
@@ -371,18 +372,15 @@
       </div>
     </div>
 
-    <div class="highlight-video">
+    <div class="highlight-image">
       <div class="nomination-title">💔🩸</div>
-      <video controls>
-        <source src="PGClips.mp4" type="video/mp4">
-        Ваш браузер не поддерживает воспроизведение видео.
-      </video>
+      <img src="maxresdefault.jpg" alt="Нарезка клипов">
       <a href="https://www.youtube.com/watch?v=pxW-TnZgw5Y" target="_blank">Смотреть на YouTube</a>
-      <div class="quality-note">Видео ужасного качества из-за веса файла, смотрите на YouTube!</div>
+      <div class="quality-note">Видео прывышает вес фрешки поэтму придётся смотреть на ютубе</div>
     </div>
   </div>
   <footer>
-    © 2024 PG78
+    © 2024 Номинации | Торжественно представлено сообществом
   </footer>
 </body>
 </html>
