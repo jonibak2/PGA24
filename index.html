@@ -135,21 +135,10 @@
       transform: translateY(-5px);
     }
 
-    .card-inner {
-      background: rgba(30, 0, 0, 0.9);
-      border-radius: 10px;
-      padding: 1rem;
-      width: 100%;
-      max-width: 280px;
-      text-align: center;
-      box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
-    }
-
-    .card-inner img {
+    .nomination-card img, .medium-card img {
       max-width: 100%;
       height: auto;
-      border-radius: 8px;
-      margin-bottom: 1rem;
+      border-radius: 10px;
     }
 
     .nomination-title {
@@ -158,15 +147,9 @@
       color: #b30000;
       text-shadow: 0 0 15px rgba(150, 0, 0, 0.7);
       text-align: center;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
 
-    .nomination-desc {
-      font-size: 1rem;
-      color: #e0e0e0;
-      text-shadow: 0 0 5px rgba(150, 0, 0, 0.5);
-    }
-    
     .video-card {
       background: linear-gradient(135deg, rgba(50, 0, 0, 0.6), rgba(20, 0, 10, 0.9));
       border-radius: 20px;
@@ -213,6 +196,13 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+    }
+
+    .medium-card img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
     }
 
     .highlight-image {
@@ -284,161 +274,95 @@
 
     <div class="medium-grid">
       <div class="medium-card">
-        <div class="card-inner">
-          <img src="igra.jpg" alt="Игра года">
-          <div class="nomination-title">Игра года</div>
-          <div class="nomination-desc">Лучшая игра по мнению сообщества</div>
-        </div>
+        <div class="nomination-title">Игра года</div>
+        <img src="igra.jpg" alt="Игра года">
       </div>
       <div class="medium-card">
-        <div class="card-inner">
-          <img src="meme.jpg" alt="Человек-мем года">
-          <div class="nomination-title">Человек-мем года</div>
-          <div class="nomination-desc">Тот, кто стал легендой мемов</div>
-        </div>
+        <div class="nomination-title">Человек-мем года</div>
+        <img src="meme.jpg" alt="Человек-мем года">
       </div>
     </div>
 
     <div class="nomination-grid">
       <div class="nomination-card">
-        <div class="card-inner">
-          <img src="dolboeb.jpg" alt="Долбоёб года">
-          <div class="nomination-title">Долбоёб года</div>
-          <div class="nomination-desc">Мастер нелепых поступков</div>
-        </div>
+        <div class="nomination-title">Долбоёб года</div>
+        <img src="dolboeb.jpg" alt="Долбоёб года">
       </div>
       <div class="nomination-card">
-        <div class="card-inner">
-          <img src="pohuy.jpg" alt="Похуист года">
-          <div class="nomination-title">Похуист года</div>
-          <div class="nomination-desc">Человек, которому всё равно</div>
-        </div>
+        <div class="nomination-title">Похуист года</div>
+        <img src="pohuy.jpg" alt="Похуист года">
       </div>
       <div class="nomination-card">
-        <div class="card-inner">
-          <img src="nytik.jpg" alt="Нытик года">
-          <div class="nomination-title">Нытик года</div>
-          <div class="nomination-desc">Король жалоб и стенаний</div>
-        </div>
+        <div class="nomination-title">Нытик года</div>
+        <img src="nytik.jpg" alt="Нытик года">
       </div>
       <div class="nomination-card">
-        <div class="card-inner">
-          <img src="sigma.jpg" alt="Сигма года">
-          <div class="nomination-title">Сигма года</div>
-          <div class="nomination-desc">Независимый и крутой</div>
-        </div>
+        <div class="nomination-title">Сигма года</div>
+        <img src="sigma.jpg" alt="Сигма года">
       </div>
       <div class="nomination-card">
-        <div class="card-inner">
-          <img src="rabotyaga.jpg" alt="Работяга года">
-          <div class="nomination-title">Работяга года</div>
-          <div class="nomination-desc">Тот, кто пашет без остановки</div>
-        </div>
+        <div class="nomination-title">Работяга года</div>
+        <img src="rabotyaga.jpg" alt="Работяга года">
       </div>
       <div class="nomination-card">
-        <div class="card-inner">
-          <img src="drachun.jpg" alt="Драчун года">
-          <div class="nomination-title">Драчун года</div>
-          <div class="nomination-desc">Любитель помахать кулаками</div>
-        </div>
+        <div class="nomination-title">Драчун года</div>
+        <img src="drachun.jpg" alt="Драчун года">
       </div>
       <div class="nomination-card">
-        <div class="card-inner">
-          <img src="dushnila.jpg" alt="Душнила года">
-          <div class="nomination-title">Душнила года</div>
-          <div class="nomination-desc">Мастер портить настроение</div>
-        </div>
+        <div class="nomination-title">Душнила года</div>
+        <img src="dushnila.jpg" alt="Душнила года">
       </div>
       <div class="nomination-card">
-        <div class="card-inner">
-          <img src="pevets.jpg" alt="Певец года">
-          <div class="nomination-title">Певец года</div>
-          <div class="nomination-desc">Звезда вокала сообщества</div>
-        </div>
+        <div class="nomination-title">Певец года</div>
+        <img src="pevets.jpg" alt="Певец года">
       </div>
       <div class="nomination-card">
-        <div class="card-inner">
-          <img src="simp.jpg" alt="Симп года">
-          <div class="nomination-title">Симп года</div>
-          <div class="nomination-desc">Тот, кто слишком старается</div>
-        </div>
+        <div class="nomination-title">Симп года</div>
+        <img src="simp.jpg" alt="Симп года">
       </div>
       <div class="nomination-card">
-        <div class="card-inner">
-          <img src="liberal.jpg" alt="Либерал года">
-          <div class="nomination-title">Либерал года</div>
-          <div class="nomination-desc">Защитник свободы слова</div>
-        </div>
+        <div class="nomination-title">Либерал года</div>
+        <img src="liberal.jpg" alt="Либерал года">
       </div>
       <div class="nomination-card">
-        <div class="card-inner">
-          <img src="sobytie.jpg" alt="Событие года">
-          <div class="nomination-title">Событие года</div>
-          <div class="nomination-desc">Самое запоминающееся событие</div>
-        </div>
+        <div class="nomination-title">Событие года</div>
+        <img src="sobytie.jpg" alt="Событие года">
       </div>
       <div class="nomination-card">
-        <div class="card-inner">
-          <img src="flooder.jpg" alt="Флудер года">
-          <div class="nomination-title">Флудер года</div>
-          <div class="nomination-desc">Король спама</div>
-        </div>
+        <div class="nomination-title">Флудер года</div>
+        <img src="flooder.jpg" alt="Флудер года">
       </div>
       <div class="nomination-card">
-        <div class="card-inner">
-          <img src="animeshnik.jpg" alt="Анимешник года">
-          <div class="nomination-title">Анимешник года</div>
-          <div class="nomination-desc">Фанат аниме и манги</div>
-        </div>
+        <div class="nomination-title">Анимешник года</div>
+        <img src="animeshnik.jpg" alt="Анимешник года">
       </div>
       <div class="nomination-card">
-        <div class="card-inner">
-          <img src="baiter.jpg" alt="Байтер года">
-          <div class="nomination-title">Байтер года</div>
-          <div class="nomination-desc">Мастер провокаций</div>
-        </div>
+        <div class="nomination-title">Байтер года</div>
+        <img src="baiter.jpg" alt="Байтер года">
       </div>
       <div class="nomination-card">
-        <div class="card-inner">
-          <img src="proval.jpg" alt="Провал года">
-          <div class="nomination-title">Провал года</div>
-          <div class="nomination-desc">Эпичный фейл года</div>
-        </div>
+        <div class="nomination-title">Провал года</div>
+        <img src="proval.jpg" alt="Провал года">
       </div>
       <div class="nomination-card">
-        <div class="card-inner">
-          <img src="poradochnosh.jpg" alt="Самая высокая порядочность года">
-          <div class="nomination-title">Самая высокая порядочность года</div>
-          <div class="nomination-desc">Человек чести</div>
-        </div>
+        <div class="nomination-title">Самая высокая порядочность года</div>
+        <img src="poradochnosh.jpg" alt="Самая высокая порядочность года">
       </div>
       <div class="nomination-card">
-        <div class="card-inner">
-          <img src="dispecher.jpg" alt="Диспечер года">
-          <div class="nomination-title">Диспечер года</div>
-          <div class="nomination-desc">Организатор хаоса</div>
-        </div>
+        <div class="nomination-title">Диспечер года</div>
+        <img src="dispecher.jpg" alt="Диспечер года">
       </div>
       <div class="nomination-card">
-        <div class="card-inner">
-          <img src="oprovdaniya.jpg" alt="Мастер оправданий года">
-          <div class="nomination-title">Мастер оправданий года</div>
-          <div class="nomination-desc">Король отмазок</div>
-        </div>
+        <div class="nomination-title">Мастер оправданий года</div>
+        <img src="oprovdaniya.jpg" alt="Мастер оправданий года">
       </div>
       <div class="nomination-card">
-        <div class="card-inner">
-          <img src="opazdun.jpg" alt="Главный опаздун года">
-          <div class="nomination-title">Главный опаздун года</div>
-          <div class="nomination-desc">Вечно опаздывающий</div>
-        </div>
+        <div class="nomination-title">Главный опаздун года</div>
+        <img src="opazdun.jpg" alt="Главный опаздун года">
       </div>
       <div class="nomination-card">
-        <div class="card-inner">
-          <img src="netakusya.jpg" alt="Нетакуся года">
-          <div class="nomination-title">Нетакуся года</div>
-          <div class="nomination-desc">Не тот, кем кажется</div>
-        </div>
+        <div class="nomination-title">Нетакуся года</div>
+        <img src="netakusya.jpg" alt="Нетакуся года">
       </div>
     </div>
 
